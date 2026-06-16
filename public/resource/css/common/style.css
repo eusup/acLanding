@@ -1778,6 +1778,7 @@ section:not(.section08, .section03) {
 /* footer */
 footer .con{
     max-width: calc(100% - 20px);
+    margin-bottom: 10px;
     border-radius: var(--radius);
     background-color: #DEE1ED;
     padding: 50px 100px;

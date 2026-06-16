@@ -144,4 +144,14 @@ $(document).ready(function () {
 
         moveImages();
     });
+
+    // popup
+    $(".show_popUp").click(function(){
+        $(".dimmed").addClass("act");
+    });
+
+    $(".dimmed .popup .btn").click(function(){
+        $(".dimmed").removeClass("act");
+    });
+
 });

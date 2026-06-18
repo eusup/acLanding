@@ -1845,7 +1845,7 @@ footer .con {
     padding: 50px 100px;
 }
 
-footer .con .flex .foo-info {
+footer .con .foo-info {
     align-items: flex-start;
     gap: 50px;
     display: flex;
@@ -1854,19 +1854,19 @@ footer .con .flex .foo-info {
     font-size: 1.5rem;
 }
 
-footer .con .flex .foo-info b {
+footer .con .foo-info b {
     font-size: 1.6rem;
 }
 
-footer .con .flex .foo-info .text {
+footer .con .foo-info .text {
     width: 100%;
 }
 
-footer .con .flex .foo-info .text>*:not(:last-child) {
+footer .con .foo-info .text>*:not(:last-child) {
     margin-bottom: 12px;
 }
 
-footer .con .flex .foo-info .text>p:not(.copy) {
+footer .con .foo-info .text>p:not(.copy) {
     padding-left: 6px;
 
     &::before {
@@ -1882,11 +1882,11 @@ footer .con .flex .foo-info .text>p:not(.copy) {
     }
 }
 
-footer .con .flex .foo-info .text ul {
+footer .con .foo-info .text ul {
     flex-wrap: wrap;
 }
 
-footer .con .flex .foo-info .text ul li {
+footer .con .foo-info .text ul li {
     margin-right: 6px;
     padding-right: 6px;
 
@@ -1903,23 +1903,23 @@ footer .con .flex .foo-info .text ul li {
     }
 }
 
-footer .con .flex .foo-info .qr-wrap {
+footer .con .foo-info .qr-wrap {
     gap: 24px;
 }
 
-footer .con .flex .foo-info .qr-wrap li a {
+footer .con .foo-info .qr-wrap li a {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 120px;
 }
 
-footer .con .flex .foo-info .qr-wrap li a>img {
+footer .con .foo-info .qr-wrap li a>img {
     width: 80px;
     height: 80px;
 }
 
-footer .con .flex .foo-info .qr-wrap li a .flex {
+footer .con .foo-info .qr-wrap li a .flex {
     justify-content: center;
     margin-top: 4px;
 }

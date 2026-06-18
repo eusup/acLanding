@@ -1064,11 +1064,6 @@ header .utill li:last-child a {
     transform: translateX(-100px);
 }
 
-.section04 .tab-contents .tab-item .text {
-    flex-shrink: 0;
-    width: calc(40% - var(--gap));
-}
-
 .section04 .tab-contents .tab-item .text p {
     margin-bottom: 12px;
     font-size: 3.2rem;
@@ -2689,21 +2684,6 @@ footer .con .foo-info .qr-wrap li a .flex {
 
     .section04 .tab-contents .tab-item .text dl dd ul {
         justify-content: center;
-    }
-
-    .section04 .tab-contents .tab-item:nth-child(3)>div {
-        display: flex;
-        gap: calc(var(--gap) / 2);
-    }
-
-    .section04 .tab-contents .tab-item>div:not(.flex) .text {
-        width: calc(50% - calc(var(--gap) / 2));
-    }
-
-    .section04 .tab-contents .tab-item>div:not(.flex) .text:first-child {
-        margin: 0;
-        padding: 0;
-        border: none;
     }
 
     .section04 .tab-contents .tab-item>div:not(.flex) .text p,

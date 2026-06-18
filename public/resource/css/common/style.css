@@ -148,6 +148,7 @@ section:not(.section08) {
     transition: var(--duration);
     line-height: 1;
     position: relative;
+    word-break: keep-all;
 }
 
 *::-webkit-scrollbar {
@@ -188,7 +189,7 @@ body {
     --gap: 24px;
     --section-gap: 200px;
     --color-main: #1FE6BF;
-    --color-shadow: rgba(10,20,59,0.05);
+    --color-shadow: rgba(10, 20, 59, 0.05);
     --color-font-gray: #9AA2C3;
     --duration: 0.6s;
 }
@@ -308,7 +309,6 @@ a {
 }
 
 .title * {
-    word-break: keep-all;
     font-family: 'Paperlogy';
     font-size: var(--font-title);
     font-weight: 800;
@@ -352,7 +352,7 @@ header .utill li:last-child a {
     background-color: var(--color-main);
 }
 
-.section .title{
+.section .title {
     margin-bottom: var(--gap);
 }
 
@@ -1219,7 +1219,6 @@ header .utill li:last-child a {
     font-family: 'Paperlogy';
     font-size: var(--font-title);
     color: #1FE6BF;
-    word-break: keep-all;
 }
 
 .section05>.con p::before {
@@ -1669,7 +1668,6 @@ header .utill li:last-child a {
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    word-break: keep-all;
 }
 
 .section10.act ul li:nth-child(odd) img {
@@ -2219,7 +2217,7 @@ footer .con .foo-info .qr-wrap li a .flex {
 /* animation end */
 
 @media screen and (max-width: 1440px) {
-    header{
+    header {
         width: calc(100dvw - 40px);
     }
 }
@@ -2544,6 +2542,17 @@ footer .con .foo-info .qr-wrap li a .flex {
     footer .con {
         padding: 20px;
     }
+
+    .dimmed .popup{
+        max-width: inherit;
+        width: calc(100% - 4dvw);
+        height: calc(100% - 4dvh);
+    }
+
+    .dimmed .popup .text{
+        height: 100%;
+        max-height: inherit;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -2553,11 +2562,7 @@ footer .con .foo-info .qr-wrap li a .flex {
         --font-title: 2.8rem;
     }
 
-    header{
-        padding: 8px;
-    }
-
-    header .utill{
+    header .utill {
         right: 8px;
     }
 
@@ -2715,6 +2720,10 @@ footer .con .foo-info .qr-wrap li a .flex {
         font-size: 1.4rem;
     }
 
+    .section05>div .alert{
+        line-height: 1.4;
+    }
+
     .section06::before {
         display: none;
     }
@@ -2796,7 +2805,7 @@ footer .con .foo-info .qr-wrap li a .flex {
         display: block;
         width: 100%;
         padding: calc(var(--gap));
-        background: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.8));
+        background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
         border-radius: var(--radius);
         border-top: 2px solid #ffffff;
         text-align: left;
@@ -2909,59 +2918,8 @@ footer .con .foo-info .qr-wrap li a .flex {
     }
 }
 
-@media screen and (max-width: 600px){
-    .section09 .title{
-        text-align: center;
-    }
+@media screen and (max-width: 600px) {
 
-    .section09 .grid{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .section09 .step-list{
-        display: flex;
-        gap: calc(var(--gap));
-    }
-
-    .section09 .step-list li{
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 0;
-        border-radius: var(--radius);
-        font-size: 1.6rem;
-        text-align: center;
-        line-height: 1.2;
-        box-shadow: 0px 0px 6px var(--color-shadow);
-        background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 40%);
-        border-bottom: 1px solid #ffffff;
-    }
-
-    .section09 .step-list li .thumb img{
-        width: 36px;
-        height: 36px;
-    }
-
-    .section09 .img-wrap{
-        min-height: inherit;
-        height: 240px;
-    }
-
-    .section11 .con>img{
-        height: 36px;
-    }
-
-    label.check_box p{
-        font-size: 1.6rem;
-    }
-
-    .section11 form>.save_application_wrap{
-        width: 100%;
-        font-size: 1.8rem;
-    }
-}
-
-@media screen and (max-width: 500px) {
     header {
         justify-content: flex-start;
     }
@@ -2972,6 +2930,18 @@ footer .con .foo-info .qr-wrap li a .flex {
 
     header .utill {
         font-size: 1.4rem;
+    }
+
+    .title *{
+        font-size: 2.4rem;
+    }
+
+    .section .title p{
+        line-height: 1.4;
+    }
+
+    .con{
+        padding: 0px 15px;
     }
 
     .section01::before {
@@ -3009,11 +2979,17 @@ footer .con .foo-info .qr-wrap li a .flex {
 
     .section03 .mySwiper .swiper-wrapper .swiper-slide .flex {
         flex-direction: column;
-        align-items: center;
     }
 
-    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .text .title {
-        text-align: center;
+    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .thumb{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+    }
+
+    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .text .title{
+        margin-bottom: 18px;
     }
 
     .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .text .title br {
@@ -3021,36 +2997,13 @@ footer .con .foo-info .qr-wrap li a .flex {
     }
 
     .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs {
-        position: relative;
+        bottom: auto;
+        top: -20px;
     }
 
-    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs img {
-        margin: 0 auto;
+    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs img{
+        width: 72px;
     }
-
-    /*
-    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs ul{
-        transform: translate(-50%,-50%);
-        top: 50%;
-        left: 50%;
-        right: auto;
-        width: 100%;
-        height: 100%;
-    }
-
-    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs ul li{
-        position: absolute;
-        width: auto;
-        font-size: 1.2rem;
-        &:nth-child(1){
-            left: 0;
-            bottom: 0;
-        }
-        &:nth-child(2){
-            right: 0;
-            bottom: 0;
-        }
-    } */
 
     .section04 .tab li.yet::before {
         transform: translate(-50%, -50%);
@@ -3058,23 +3011,24 @@ footer .con .foo-info .qr-wrap li a .flex {
         border-bottom-left-radius: 100px;
     }
 
-    .section04 .tab li .btn{
+    .section04 .tab li .btn {
+        width: 80px;
         padding: 6px;
     }
 
-    .section04 .tab li .btn span{
+    .section04 .tab li .btn span {
         font-size: 1.4rem;
     }
 
-    .section04 .tab-contents .tab-item .text p{
+    .section04 .tab-contents .tab-item .text p {
         font-size: 2rem;
     }
 
-    .section04 .tab-contents .tab-item .text dl dt{
+    .section04 .tab-contents .tab-item .text dl dt {
         font-size: 1.4rem;
     }
 
-    .section04 .tab-contents .tab-item .text dl dd ul li{
+    .section04 .tab-contents .tab-item .text dl dd ul li {
         font-size: 1.6rem;
     }
 
@@ -3100,69 +3054,159 @@ footer .con .foo-info .qr-wrap li a .flex {
         }
     }
 
-    .section05>div .title{
+    .section05>div .title {
         flex-direction: column;
         align-items: flex-start;
         gap: 6px;
     }
 
-    .section06 ul.flex>li{
+    .section05>div .title .caption span{
+        font-size: 1.3rem;
+    }
+
+    .section05>.con p::before{
+        height: 84px;
+    }
+
+    .section06 ul.flex>li {
         border: 1px solid #ffffff;
     }
 
-    .section06 ul.flex>li .thumb{
+    .section06 ul.flex>li .thumb {
         width: 100%;
     }
 
-    .section06 ul.flex>li{
+    .section06 ul.flex>li {
         flex-direction: column;
     }
 
-    .section06 ul.flex>li img{
+    .section06 ul.flex>li img {
         border-top-left-radius: var(--radius);
         border-top-right-radius: var(--radius);
         border-bottom-left-radius: 0;
     }
 
-    .section06 ul.flex>li .text{
+    .section06 ul.flex>li .text {
         border-top-right-radius: 0;
         border-bottom-left-radius: var(--radius);
         border-bottom-right-radius: var(--radius);
     }
 
-    .section04 .tab li .btn{
-        width: 80px;
-    }
-
-    .section10 .con{
+    .section10 .con {
         background: none;
         box-shadow: none;
         border: none;
         padding: 0;
     }
 
-    .section10 ul li{
+    .section09 .title {
+        text-align: center;
+    }
+
+    .section09 .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section09 .step-list {
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--gap));
+    }
+
+    .section09 .step-list li {
+        width: 100%;
+        margin-bottom: 0;
+        border-radius: var(--radius);
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 1.2;
+        box-shadow: 0px 0px 6px var(--color-shadow);
+        background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 40%);
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .section09 .step-list li .thumb img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .section09 .img-wrap {
+        min-height: inherit;
+        height: 240px;
+    }
+
+    .section10 ul li {
         font-size: 1.6rem;
     }
 
-    .section10 ul li:nth-child(odd){
+    .section10 ul li:nth-child(odd) {
         width: 100%;
     }
 
-    .section10 ul li:nth-child(odd) img{
+    .section10 ul li:nth-child(odd) img {
         width: 42px;
         height: 42px;
     }
 
-    .section10 ul li:nth-child(even){
+    .section10 ul li:nth-child(even) {
         flex-shrink: 0;
         width: 24px;
         height: 24px;
     }
 
-    .section10 ul li:nth-child(even) img{
+    .section10 ul li:nth-child(even) img {
         width: 100%;
         height: 100%;
     }
 
+    .section11 .con>img {
+        height: 36px;
+    }
+
+    label.check_box p {
+        font-size: 1.6rem;
+    }
+
+    .section11 form>.save_application_wrap {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    header{
+        width: calc(100dvw - 30px);
+    }
+
+    .section01 .inner .bubble img{
+        display: none;
+    }
+
+    .section01 .inner .bubble span{
+        display: block;
+        width: 100%;
+        padding: 0;
+        background-color: inherit;
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .section01 .inner h2.title>div .ball-wrap{
+        display: none;
+    }
+
+    .section01 .inner h2.title{
+        margin-top: 0;
+    }
+
+    .section01 .inner h2.title>div p{
+        font-size: 3.6rem;
+    }
+
+    .section01 .inner h2.title>p{
+        font-size: 1.6rem;
+        text-align: center;
+    }
 }

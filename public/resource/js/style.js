@@ -18,7 +18,7 @@ $(document).ready(function () {
         // 하단에서 cta 숨기기
         if ($(".section11").hasClass("act")) {
             $(".btn-cta").addClass("act");
-        }else{
+        } else {
             $(".btn-cta").removeClass("act");
         }
     });
@@ -60,11 +60,11 @@ $(document).ready(function () {
         );
     });
 
-    $(".section04 .tab li.yet").on("click", function(){
-    $(this).removeClass("shake");
-    this.offsetWidth; // 강제 리플로우
-    $(this).addClass("shake");
-});
+    $(".section04 .tab li.yet").on("click", function () {
+        $(this).removeClass("shake");
+        this.offsetWidth; // 강제 리플로우
+        $(this).addClass("shake");
+    });
 
     // 스와이프 슬라이드
     var swiper = new Swiper(".mySwiper", {
@@ -73,6 +73,11 @@ $(document).ready(function () {
         spaceBetween: -200,
         speed: 500,
         centeredSlides: true,
+        breakpoints: {
+            481: {
+        spaceBetween: -100,
+            },
+        }
     });
     $(".pagination button").eq(swiper.activeIndex).addClass("act");
     $(".pagination button").click(function () {
@@ -146,11 +151,11 @@ $(document).ready(function () {
     });
 
     // popup
-    $(".show_popUp").click(function(){
+    $(".show_popUp").click(function () {
         $(".dimmed").addClass("act");
     });
 
-    $(".dimmed .popup .btn").click(function(){
+    $(".dimmed .popup .btn").click(function () {
         $(".dimmed").removeClass("act");
     });
 

@@ -159,4 +159,9 @@ $(document).ready(function () {
         $(".dimmed").removeClass("act");
     });
 
+    // cta 클릭시 section11 이동
+    $(".btn-cta").click(function(){
+
+    });
+
 });

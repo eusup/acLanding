@@ -776,8 +776,6 @@ header .utill li:last-child a {
     flex-shrink: 0;
     width: 100%;
     max-width: 704px;
-    height: 240px;
-    padding: 24px;
     border-radius: var(--radius);
     background-color: #ffffff;
     transform: scale(0.8);
@@ -798,9 +796,12 @@ header .utill li:last-child a {
 }
 
 .section03 .mySwiper .swiper-wrapper .swiper-slide .flex {
+    width: 100%;
+    height: 100%;
+    padding: 54px;
     gap: 14px;
     align-items: flex-start;
-    height: 100%;
+    overflow: hidden;
 }
 
 .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .thumb {
@@ -815,6 +816,11 @@ header .utill li:last-child a {
 .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .thumb img {
     margin-bottom: 4px;
     border-radius: 100px;
+}
+
+.section03 .mySwiper .swiper-wrapper .swiper-slide .flex .text{
+    position: relative;
+    z-index: 3;
 }
 
 .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .text .title {
@@ -852,18 +858,21 @@ header .utill li:last-child a {
 }
 
 .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs {
-    bottom: 0;
-    right: 0;
+    bottom: -50px;
+    right: -50px;
 }
 
 .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs img {
     margin-left: auto;
+    width: 300px;
+    height: 300px;
+    opacity: 0.4;
 }
 
 .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs ul {
     position: absolute;
-    bottom: 0;
-    right: calc(100% - 20px);
+    bottom: 74px;
+    right: 74px;
     white-space: nowrap;
 }
 
@@ -2366,7 +2375,6 @@ footer .con .foo-info .qr-wrap li a .flex {
 
     .section03 .mySwiper .swiper-wrapper .swiper-slide {
         max-width: 640px;
-        height: 200px;
     }
 
     .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .thumb img {
@@ -2959,11 +2967,11 @@ footer .con .foo-info .qr-wrap li a .flex {
 
     .section03 .mySwiper .swiper-wrapper .swiper-slide {
         height: auto;
-        padding: 14px;
     }
 
     .section03 .mySwiper .swiper-wrapper .swiper-slide .flex {
         flex-direction: column;
+        padding: 34px;
     }
 
     .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .thumb {
@@ -2981,13 +2989,8 @@ footer .con .foo-info .qr-wrap li a .flex {
         display: none;
     }
 
-    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs {
-        bottom: auto;
-        top: -20px;
-    }
-
-    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs img {
-        width: 72px;
+    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs{
+        opacity: 0.4;
     }
 
     .section04 .tab li.yet::before {

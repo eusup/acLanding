@@ -2598,6 +2598,10 @@ footer .con .foo-info .qr-wrap li a .flex {
         text-align: center;
     }
 
+    .section01 .inner h2.title>p{
+        text-align: center;
+    }
+
     .section01 .inner .img-wrap .rel img {
         width: 200px;
         height: 200px;

@@ -177,6 +177,10 @@ body {
     letter-spacing: -0.025em;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .wrap {
     min-height: 100vh;
     background-color: #F0F2FA;
@@ -775,7 +779,7 @@ header .utill li:last-child a {
 .section03 .mySwiper .swiper-wrapper .swiper-slide {
     flex-shrink: 0;
     width: 100%;
-    max-width: 704px;
+    max-width: 840px;
     border-radius: var(--radius);
     background-color: #ffffff;
     transform: scale(0.8);

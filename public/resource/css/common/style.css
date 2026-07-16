@@ -3205,6 +3205,15 @@ footer .con .foo-info .qr-wrap li a .flex {
         font-size: 1.6rem;
         text-align: center;
     }
+
+    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex{
+        padding: 12px;
+    }
+
+    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs img{
+        width: 240px;
+        height: 240px;
+    }
 }
 
 /* over 2k */

@@ -2993,10 +2993,6 @@ footer .con .foo-info .qr-wrap li a .flex {
         margin-bottom: 18px;
     }
 
-    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .text .title br {
-        display: none;
-    }
-
     .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs{
         opacity: 0.4;
     }

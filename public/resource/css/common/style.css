@@ -870,7 +870,6 @@ header .utill li:last-child a {
     margin-left: auto;
     width: 300px;
     height: 300px;
-    opacity: 0.4;
 }
 
 .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs ul {
@@ -2986,15 +2985,29 @@ footer .con .foo-info .qr-wrap li a .flex {
         display: flex;
         align-items: center;
         gap: 4px;
+        margin: 0 auto;
+    }
 
+    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .text{
+        width: 100%;
     }
 
     .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .text .title {
+        text-align: center;
         margin-bottom: 18px;
+    }
+
+    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .text ul{
+        width: fit-content;
+        margin: 0 auto;
     }
 
     .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs{
         opacity: 0.4;
+    }
+
+    .section03 .mySwiper .swiper-wrapper .swiper-slide .flex .abs img{
+        display: none;
     }
 
     .section04 .tab li.yet::before {

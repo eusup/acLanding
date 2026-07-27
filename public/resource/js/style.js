@@ -153,10 +153,12 @@ $(document).ready(function () {
     // popup
     $(".show_popUp").click(function () {
         $(".dimmed").addClass("act");
+        $(".popup.terms").addClass("act");
     });
 
     $(".dimmed .popup .btn").click(function () {
         $(".dimmed").removeClass("act");
+        $(".dimmed .popup").removeClass("act");
     });
 
     // cta 클릭시 section11 이동

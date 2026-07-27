@@ -1876,6 +1876,10 @@ header .utill li:last-child a {
   animation-iteration-count: infinite;
 }
 
+.section.done .complete .title{
+    text-align: center;
+}
+
 @keyframes swing1 {
   0% {
     opacity: 1;
@@ -3019,6 +3023,16 @@ footer .con .foo-info .qr-wrap li a .flex {
 
   .section10 .title {
     margin-bottom: 18px;
+  }
+
+  .wrap:has(.section.done){
+    height: auto;
+  }
+
+  .section.done{
+    justify-content: start;
+    height: 100dvh;
+    padding: 120px 0;
   }
 
   footer {
